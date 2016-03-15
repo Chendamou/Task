@@ -1,0 +1,219 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 100%;
+	background-color: #dedede;
+	font-family: "微软雅黑";
+	line-height: 2em;
+}
+
+a {
+	text-decoration: none; 
+}
+
+h3 {
+	color: gray;
+}
+
+section, aside {
+	border-right: 2px solid #828282;
+	border-bottom: 2px solid #a1a1a1;
+}
+
+/*header --begain--*/
+header {
+	height: 60px;
+	background-color: #333;
+	position: relative;
+}
+
+header img {
+	height: 120%;
+	width: auto;
+	margin-left: 50px;
+	margin-top: -15px;
+}
+header ul {
+	position: absolute;
+	top: 30%;
+	right: 0px;
+	text-decoration: none;
+}
+
+header li {
+	float: left;
+	list-style: disc;
+}
+
+header a {
+	font-size: 12px;
+	margin-right: 25px;
+	color: #fff;
+ }
+
+header a:hover {
+	color: #ccc;
+}
+
+
+/*header --end--*/
+
+#p1 {
+	margin: 20px;
+	background: #fff;
+	padding: 38px 20px;
+}
+
+.author, .time {
+	font-size: 13px;
+	color: gray;
+}
+
+.text-indent {
+	text-indent: 2em;
+}
+
+/*section-p1 --end-- */
+
+/*section-p2 --begin-- */
+#p2 {
+	margin: 0 20px;
+	background: #fff;
+	padding: 38px 20px;
+}
+
+#p2 ul {
+	list-style: none;
+	padding-left: 30px;
+}
+/*section-p2 --end-- */
+
+
+/*section-p3 --begin-- */
+#p3 {
+	margin: 20px;
+	padding: 28px 20px;
+	background: #fff;
+}
+
+#p3 h1 {
+	margin-bottom: 20px;
+}
+
+#p3 div {
+	width: 126px;
+	height: auto;
+	text-align: center;
+	border: 1px solid gray;
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+#p3 img {
+	width: 80%;
+	height: auto;
+}
+
+#p3 span {
+	font-size: 13px;
+}
+/*section-p3 --end-- */
+
+/*section-p4 --begin-- */
+#p4 {
+	margin: 0 20px;
+	padding: 28px 20px;
+	background: #fff;
+}
+
+#p4 li {
+	font: normal bold 16px/16px arial;
+	margin: 10px 0 10px 30px;
+}
+
+#p4 table {
+	width: 100%;
+	font-size: 14px;
+	border-collapse: collapse;
+
+}
+
+#p4 th {
+	background: #333;
+	color: white;
+}
+
+#p4 td, #p4 th {
+	border: 1px solid #ccc;
+}
+
+#p4 .total td {
+	background: #ccc;
+}
+/*section-p4 --end-- */
+
+
+/*aside --begin-- */
+aside {
+/*	width: 100%;*/
+	padding: 20px;
+	background: #fff;
+	margin: 40px 40px 20px 20px;
+}
+
+aside h4 {
+	border-left: 2px solid #ccc;
+	padding-left: 10px;
+}
+
+
+aside div {
+	margin-left: 230px;
+}
+
+.text-hint {
+	margin-left: 170px;
+	color: #ccc;
+}
+
+.text-right {
+	display: inline-block;
+	width: 150px;
+	height: 21px;
+	text-align: right;
+	margin-right: 15px;
+}
+
+textarea {
+	width: 70%;
+	height: 100px;
+}
+
+aside button {
+	width: 96%;
+	height: 40px;
+	background: #3355d0;
+	margin: 0 2%;
+	border-radius: 5px;
+	font-size: 1.2em;
+	color: white;
+
+}
+/*aside --end-- */
+
+/*footer --begin-- */
+footer {
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	background: #000;
+}
+footer p {
+	font-size: 14px;
+	color: white;
+	text-align: center;
+}
+/*footer --end-- */
