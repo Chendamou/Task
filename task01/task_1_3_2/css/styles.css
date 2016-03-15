@@ -1,0 +1,76 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #999;
+}
+
+ #left, #mid, #right {
+	padding: 20px;
+	border: 1px solid #999;
+} 
+
+#main {
+	background: #eee;
+	margin: 20px;
+	min-height: 547px;
+	overflow: hidden;
+}
+
+/* left */
+#left {
+	float: left;
+	width: 200px;
+	background: #fff;
+	margin: 20px;
+
+	/* 为了定位 span 加的，和布局无关*/
+	position: relative;
+}
+
+#left span {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-family: "楷体";
+}
+
+
+
+/* right */
+#right {
+	float: right;
+	width: 120px;
+	margin: 20px;
+	text-align: center;
+	background: #fff;
+}
+
+.pic_1, .pic_2,.pic_3,.pic_4 {
+	margin-bottom: 15px;
+}
+
+
+/* mid */
+#mid {
+	position: relative;
+	margin: 0 auto 40px;
+	overflow: hidden;
+	background: #fff;
+	top: 20px;
+}
+
+#mid span {
+	font-size: 2em;
+	font-family: "楷体";
+}
+
+#mid p {
+	font-family: "楷体";
+	text-indent: 2em;
+}
