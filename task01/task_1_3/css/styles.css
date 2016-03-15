@@ -1,0 +1,73 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	background: #eee;
+	margin: 20px;
+	min-height: 530px;
+}
+
+img {
+	max-width: 100%;
+	width: 80px;
+	height: 80px;
+}
+
+
+#content, #left, #main, #right {
+	padding: 20px;
+	border: 1px solid #999;
+} 
+
+
+/* left */
+#left {
+	position: absolute;
+	width: 200px;
+	background: #fff;
+	left: 40px;
+}
+
+#left span {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-family: "楷体";
+}
+
+/* right */
+#right {
+	position: absolute;
+	width: 120px;
+	background: #fff;
+	right: 40px;
+
+}
+
+#right img {
+	padding-left: 20px;
+}
+
+.pic_1, .pic_2, .pic_3, .pic_4 {
+	margin-bottom: 15px;
+}
+
+/* main */
+#main {
+	background: #fff;
+	margin: 0 180px 0 260px;
+}
+
+#main span {
+	font-size: 2em;
+	font-family: "楷体";
+	line-height: 2em;
+}
+
+#main p {
+	font-family: "楷体";
+	text-indent: 2em;
+	line-height: 1em;
+}
