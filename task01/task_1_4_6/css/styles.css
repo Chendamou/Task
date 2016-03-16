@@ -3,20 +3,31 @@ blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr
 	padding: 0;
 }
 
+
+#container {
+	text-align: center;
+	overflow: auto;
+}
+
+#container:after, #rectangle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#container:after {
+	content: '';
+	height: 100%;
+	margin-left: -0.25em;
+}
+
 #rectangle {
-	background: #ccc;
+	max-width: 99%;
 	width: 400px;
 	height: 200px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
-
-	/*隐藏圆形的 3/4 */
-	overflow: hidden;
+	background: red;
 }
+
+
 
 
 /*产生圆形*/

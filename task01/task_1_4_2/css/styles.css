@@ -4,15 +4,18 @@ blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr
 }
 
 #rectangle {
-	background: #ccc;
 	width: 400px;
 	height: 200px;
+	background: #ccc;
 	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
+	left: 50%;
+	top: 50%;
+
+	/* margin-left 为 width 长度的一半*/
+	margin-left: -200px; 
+
+	/* margin-top 为 height 高度的一半*/
+	margin-top: -100px;
 
 	/*隐藏圆形的 3/4 */
 	overflow: hidden;

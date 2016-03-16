@@ -1,0 +1,63 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	background:#000;
+	width: 60%;
+
+    /*以下是为了设置 父元素container 的垂直居中*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+    /*以上是为了设置 父元素container 的垂直居中*/
+
+
+
+    /*设置的子元素 rectangle 的垂直居中*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	 /*设置的子元素 rectangle 的垂直居中*/
+
+
+
+    /* 注意这里需要设置 container 的高度来查看
+       rectangle 的垂直居中效果 */
+	height: 400px;
+}
+
+#rectangle {
+	background: #ccc;
+	width: 400px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+/*产生圆形*/
+#rectangle div {
+	background: #fc0;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+/*把其中一个圆形挪到左上角*/
+.sector_1 {
+	position: absolute;
+	left: -50px;
+	top: -50px;
+}
+
+/*把另一个圆形挪到右下角*/
+.sector_2 {
+	position: absolute;
+	right: -50px;
+	bottom: -50px;
+}
