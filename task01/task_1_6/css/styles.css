@@ -94,7 +94,7 @@ header span {
 }
 
 #top-right .about {
-	font-style: "微软雅黑";
+	font-family: "微软雅黑";
 	font-size: 24px;
 	text-decoration: underline;
 }
@@ -123,7 +123,7 @@ header span {
 	font-size: 116px;
 	color: #75b86b;
 	font-family: "微软雅黑";
-	font-style: italic;
+	font-style: oblique;
 	font-weight: bold;
 	margin-left: -30px;
 }
@@ -161,7 +161,9 @@ header span {
 
 /*mid*/
 #mid {
+	height: 170px;
 	margin-top: 42px;
+	margin-bottom: 75px;
 }
 
 #mid .mid-1, #mid .mid-2 {
@@ -226,3 +228,271 @@ header span {
 	top: 28px;
 }
 
+.mid-3>div {
+	position: absolute;
+	top: 110px;
+}
+
+.mid-3 .www {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	line-height: 16px;
+	opacity: 70%;
+	color: #231815;
+}
+
+.mid-3 .percent {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	line-height: 16px;
+	font-style: italic;
+	color: #cd4a48;
+	opacity: 70%;
+}
+
+/*bottom*/
+
+#bottom {
+	height: 605px;
+/*	clear: both;*/
+}
+
+#bottom-left {
+	float: left;
+	width: 415px;
+	margin-right: 19px;
+}
+
+#bottom-right {
+	width: 458px;
+	float: left;
+}
+
+/*bottom-left*/
+#bottom-left .top {
+	height: 152px;
+	padding-bottom: 18px;
+	border-bottom: 2px solid #10456b;
+}
+
+#bottom-left .top span:first-child {
+	font-size: 72px;
+	color: #f5e327;
+	font-family: "黑体";
+	font-weight: bold;
+	font-style: italic;
+}
+
+#bottom-left .top span:nth-child(2) {
+	font-size: 42px;
+	color: #11456b;
+	font-family: "黑体";
+	line-height: 16px;
+	margin-left: 16px;
+}
+
+#bottom-left .top span:nth-child(3) {
+    font-size: 33px;
+	color: #11456b;
+	font-family: "黑体";
+	font-weight: bold;
+	display: block;
+	margin-top: 14px;
+} 
+
+
+/*bottom-left bottom*/
+#bottom-left .bottom {
+	margin-top: 25px;
+}
+
+#bottom-left .bottom span{
+	font-size: 70px;
+	color: #f5e327;
+	font-family: "微软雅黑";
+	float: left;
+
+}
+
+#bottom-left .bottom img {
+	float: right;
+	margin: 24px;
+}
+#bottom-left .bottom p {
+	font-size: 12px;
+	color: #767777;
+	font-family: "宋体";
+	line-height: 16px;
+}
+
+
+/*bototm-right*/
+#bottom-right .top {
+	position: relative;
+}
+
+#bottom-right .top img {
+	width: 458px;
+	height: 275px;
+}
+
+#bottom-right .top div {
+	width: 458px;
+	height: 61px;
+	position: absolute;
+	bottom: 2px;
+	background: #000;
+	opacity: 0.4;
+
+}
+
+#bottom-right .top span:first-child {
+	font-size: 26px;
+	color: #fff;
+	font-family: "微软雅黑";
+	height: 44px;
+	padding-left: 5px;
+	border-left: 3px solid #72b16a;
+
+	position: absolute;
+	top: 8.5px;
+	left: 40px;
+}
+
+#bottom-right .top span:last-child {
+	font-size: 12px;
+	color: #72b16a;
+	font-style: italic;
+	font-family: "微软雅黑";
+	line-height: 1.4em;
+
+	position: absolute;
+	top: 32px;
+	left: 164px;
+}
+
+/*#bottom-right bottom*/
+#bottom-right .bottom {
+	height: 318px;
+	margin-top: 30px;
+	background: #eeedd6;
+	position: relative;
+}
+
+#bottom-right .bottom .bd-1 {
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 20px;
+}
+
+.trangle {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #10456b;
+	display: inline-block;
+	margin-right: 7px;
+}
+
+.bp {
+	font-size: 16px;
+	color: #5a5b5b;
+	font-family: "宋体";
+	margin-bottom: 20px;
+}
+
+.bs {
+	font-size: 12px;
+	color: #5a5b5b;
+	font-family: "宋体";
+	font-style: oblique;
+	line-height: 20px;
+	text-align: right;
+}
+
+#bottom-right .bottom .bd-2 {
+	width: 260px;
+	height: 160px;
+	background: #d45d5c;
+
+	position: absolute;
+	left: 0;
+	top: 158px;
+}
+
+.word-before {
+	font-size: 100px;
+	color: #fff;
+	font-family: "微软雅黑";
+
+	position: absolute;
+	top: 14px;
+	left: 15px;
+}
+
+.word-after {
+	height: 86px;
+	width: 170px;
+
+	border-left: 2px solid #fff;
+	padding-left: 10px;
+	position: absolute;
+	left: 78px;
+	top: 37px;
+}
+
+.word-after span {
+	color: #fff;
+	font-size: 21px;
+	font-family: "黑体";
+	font-style: oblique;
+	line-height: 24px;
+	display: block;
+}
+
+.word-after p {
+	font-size: 12px;
+	color: #fff;
+	font-family: "黑体";
+	display: block;
+}
+
+#bottom-right .bottom .bd-3 {
+	height: 130px;
+	width:170px;
+	margin-right: 20px;
+	position: absolute;
+	right: 0;
+	top: 158px;
+}
+
+.bd-3 span {
+	font-size: 72px;
+	color: #d45d5c;
+	font-family: "黑体";
+}
+
+.bd-3 p {
+	font-size: 14px;
+	color: #5a5b5b;
+	font-family: "黑体";
+	line-height: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	clear: both;
+	position: relative;
+	bottom: 0;
+}
