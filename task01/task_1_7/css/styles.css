@@ -4,9 +4,313 @@ blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr
 }
 
 body {
-
+	width: 1280px;
+	margin: 0 auto;
 }
 
 header {
+	height: 58px;
+	position: relative;
+}
+
+.header-left {
+	position: absolute;
+	top: 50%;
+	height: 31px;
+	margin-top: -15.5px;
+	margin-left: 59px;
+}
+
+.header-left span {
+	font-size: 20px;
+	font-family: "微软雅黑";
+	height: 20px;
+	width: 61px;
+	position: absolute;
+	top: 5.5px;
+	left: 41px;
+}
+
+header nav {
+	position: absolute;
+	right: 70px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav a {
+	position: relative;
+	font-size: 15px;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	height: 39px;
+	width: 65px;
+	margin-top: 16px;
+	margin-left: 30px;
+
+	color: #787b83;
+	font-family: "微软雅黑";
+}
+
+nav a:first-child {
+	color: #e7504d;
+	border-bottom: 4px solid #e7504d;
+}
+
+nav a:last-child, nav a:hover{
+	color: #e7504d;
+}
+
+nav a img {
+	position: relative;
+	top: 3px;
+	margin-left: -25px;
+	margin-right: 5px;
+}
+
+/*s1*/
+#s1 {
+	position: relative;
+	width: 1280px;
+	height: 692px;
+	background: url(../images/s1bg.png) no-repeat 0 0;
+}
+
+#s1 div {
+	position: absolute;
+	top: 228px;
+	left: 116px;
+	font-family: "微软雅黑";
+	color: #fff;
+}
+
+#s1 div span {
+	font-size: 58px;
+}
+
+#s1 div p {
+	margin-top: 30px;
+	font-size: 22px;
+}
+
+#s1 div a {
+	display: block;
+	text-align: center;
+	line-height: 67px;
+	height: 67px;
+	width: 333px;
+	background: #e74f4d;
+	margin-top: 65px;
+	font-size: 30px;
+	font-family: "微软雅黑";
+	font-weight: 300;
+	color: #fff;
+}
+
+/*s2*/
+#s2 {
+	height: 250px;
+}
+
+#s2 div {
+	height: inherit;
+	width: 320px;
+	text-align: center;
+	float: left;
+}
+
+.s2_d img {
+	margin-top: 45px;
+}
+
+.s2_d p {
+	font-family: "微软雅黑";
+	height: 52px;
+	margin-top: 47px;
+	font-size: 14px;
+	color: #8d8d8d;
+
+	border-right: 2px solid #8d8d8d;
+}
+
+/*s3*/
+#s3 {
+	height: 361px;
+	background: #ededed;
+	text-align: center;
+}
+
+#s3 img {
+	margin-top: 89px;
+}
+
+#s3 p {
+	font-family: "微软雅黑";
+	margin-top: 50px;
+	font-size: 50px;
+	color: #a2a2a2;
+}
+
+/*s4*/
+#s4 {
+	position: relative;
+	text-align: center;
+	width: inherit;
+	height: 341px;
+	background: url(../images/s4bg.png) no-repeat right bottom;
+}
+
+#s4 p:first-child {
+	font-size: 20px;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-weight: 350;
+	padding-top: 53px;
+}
+
+#s4>div {
+	height: 2px;
+	width: 30px;
+	background: #fff;
+	margin: 10px auto 19px;
+}
+
+#s4 .s4_p2 {
+	font-size: 13px;
+	color: #fff;
+	font-family: "微软雅黑";
+}
+
+#s4 form {
+	margin-top: 52px;
+}
+
+#s4 select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+
+    font-size: 14px;
+	font-family: "微软雅黑";
+	color: #767678;
+	width: 236px;
+	height: 36px;
+	background: #fff url(../images/s4-4.png) no-repeat 207px center;
+}
+
+#s4 select option {
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #767678;
+	background: #e3e3e5;
+}
+
+#s4 button {
+	width: 236px;
+	height: 36px;
+	background: #BF4E48;
+	color: #fff;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+
+/*s5*/ 
+#s5 {
+	height: 605px;
+	background: #f7f7f7;
+
+} 
+
+#s5>div {
+	height: 400px;
+	width: 218px;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+#s5>div>div {
+	width: inherit;
+	height: 338px;
+	border: 1px solid #E0E0E0;
+}
+
+#s5>div>span {
+	display: block;
+}
+
+.s5_box_1 {
+	margin-left: 150px;
+	margin-top: 103px;
+}
+
+.s5_box_2 {
+	margin-left: 35px;
+	margin-top: 103px;
+}
+
+.s5_b_1 {
+	font-size: 16px;
+	font-family: "微软雅黑";
+	margin-top: 12px;
+}
+
+.s5_b_2 {
+
+	font-size: 12px;
+	font-family: "微软雅黑";
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.s5_t_1 {
+	font-size: 18px;
+	font-family: "微软雅黑"
+}
+
+.s5_t_2 {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #ccc;
+	margin-top: 7px;
+	margin-bottom: 10px;
+}
+
+#s5 .s5_bg_1 {
+/*	margin-top: 100px;
+	margin-left: 150px;*/
+	background: #fff url(../images/s5-1.png) no-repeat 8px 13px;
+}
+
+#s5 .s5_bg_2 {
+	background: #fff url(../images/s5-1.png) no-repeat -246px -40px;
+}
+
+#s5 .s5_bg_3 {
+	background: #fff url(../images/s5-1.png) no-repeat -504px 13px;
+}
+
+#s5 .s5_bg_4 {
+	background: #fff url(../images/s5-1.png) no-repeat -759px 13px;
+}
+
+/*s6*/
+#s6 {
+	height: 556px;
+}
+
+.s6_left {
+	height: 556px;
+	width: 850px;
+	background: url(../images/s6_bg.png) no-repeat 0 0;
+	float: left;
+	text-align: center;
 	
+}
+
+.s6_right {
+	height: 556px;
+	width: 430px;
+	float: left;
 }
