@@ -44,23 +44,26 @@ function isEmpty(obj) {
      for (var each in obj) {
         i++;
     }
-    console.log(i);
     return i;
 }
 
-function renderAqiList() {
-    var aqiTable = document.getElementById('aqi-table');
-    // var tr = document.createElement('tr');
-    // var td = document.createElement('td');
-    // var button = document.createElement('button');
-    var tr_first = "<tr><th>城市</th><th>空气质量</th><th>删除当前</th></tr>";
-    if (isEmpty(aqiData)) {
-        for (var each in aqiData) {
-            tr_first += ''
-        }
+function renderAqiList(data) {
+    var tr = document.createElement("tr");
+    var td1 = document.createElement("td");
+    td1.innerHTML = ;
+    var td2 = document.createElement("td");
+    td2.innerHTML = value;
+    var td3 = document.createElement("td");
+    var btn = document.createElement("button");
+    btn.onclick = function(){
+        delBtnHandle(tr);
     }
-
-
+    btn.innerHTML = "删除";
+    td3.appendChild(btn);
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+    document.getElementById("aqi-table").appendChild(tr);
 }
 
 /**
@@ -77,19 +80,14 @@ function addBtnHandle() {
  * 点击各个删除按钮的时候的处理逻辑
  * 获取哪个城市数据被删，删除数据，更新表格显示
  */
-function delBtnHandle() {
-    // do sth.
-
+function delBtnHandle(city) {
+    delete aqiData[city];
     renderAqiList();
 }
 
 function init() {
-
-    addAqiData();
-
-    // 在这下面给add-btn绑定一个点击事件，点击时触发addBtnHandle函数
-    // 想办法给aqi-table中的所有删除按钮绑定事件，触发delBtnHandle函数
-
+    var addBtn = document.getElementById('add-btn');
+    addBtn.onclick = addBtnHandle();
 }
 
-window.onload = init;
+init();
