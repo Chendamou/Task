@@ -1,0 +1,151 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+#main {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#left {
+    position: relative;
+    width: 37%;
+    text-align: center;
+    background: darkslategray;
+    float: left;
+    padding-top: 50px;
+    color: #fff;
+    height: 1130px;
+}
+
+
+
+.head {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: 150px 150px;
+    background-image: url(images/head.png);
+    background-repeat: no-repeat;
+}
+
+.name {
+    font-size:50px;
+
+}
+
+.job {
+    margin:0 auto;
+    display: block;
+    width: 70%;
+    /*border-bottom: 2px solid #fff;*/
+    /*border-top: 2px solid #fff;*/
+}
+
+.job>p {
+    font-size:20px;
+}
+
+.job>span {
+    font-size:30px;
+}
+
+.info {
+    margin: 20px auto;
+}
+.info>span{
+    display: block;
+    font-size:20px;
+}
+
+.info a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.skills {
+    position: relative;
+}
+
+.skill>div {
+    display: inline-block;
+    width: 200px;
+    height:20px;
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.8;
+
+
+    margin-left: 70px;
+}
+
+.skill>span {
+    position: absolute;
+    right: 230px;
+}
+
+.skill>div>div {
+    width: 150px;
+    height: inherit;
+    background: #0e78b4;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#left>p {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*right*/
+#right {
+    width: 60%;
+    background: lightslategray;
+    float: right;
+    padding-top: 50px;
+    padding-left: 3%;
+    height: 1131px;
+}
+
+.projects>h2 {
+    font-size:50px;
+}
+
+.project {
+    margin: 20px 0;
+}
+.project>a {
+    font-size:30px;
+    color: #0e78b4;
+}
+
+.project>p {
+    font-size:24px;
+
+}
+
+.education>h2 {
+    font-size:50px;
+}
+
+.school {
+    display: block;
+    font-size:35px;
+    color: #0e78b4;
+}
+
+.date {
+    display: block;
+    font-size:24px;
+    color: #3355d0;
+}
+
+.major {
+    display: block;
+    font-size:30px;
+}
