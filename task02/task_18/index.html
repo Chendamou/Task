@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #num {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 50%;
+            width: 100%;
+            border: 1px solid #000000;
+        }
+
+        #num div {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            background: red;
+            line-height: 50px;
+            font-size:25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <input type="text" id="text">
+    <input type="button" value="左侧入" id="left_in">
+    <input type="button" value="右侧入" id="right_in">
+    <input type="button" value="左侧出" id="left_out">
+    <input type="button" value="右侧出" id="right_out">
+</section>
+<section id="num">
+    <div>10</div>
+    <div>3</div>
+    <div>7</div>
+    <div>12</div>
+    <div>11</div>
+    <div>30</div>
+</section>
+<script>
+
+
+
+
+    function getRandomColor() {
+        var rand = Math.floor(Math.random() * 0xFFFFFF).toString(16);
+        return "#" + rand;
+    }
+    
+    function getValue() {
+        var text = document.getElementById('text');
+        var val = text.value;
+        return val;
+    }
+
+    function addRightBox() {
+        var num = document.getElementById('num');
+        var div = document.createElement('div');
+        var text = document.createTextNode(getValue());
+        div.style.background = getRandomColor();
+        div.appendChild(text);
+        num.appendChild(div);
+    }
+
+    function addLeftBox() {
+        var num = document.getElementById('num');
+        var div = document.createElement('div');
+        var text = document.createTextNode(getValue());
+        div.style.background = getRandomColor();
+        div.appendChild(text);
+        num.insertBefore(div,num.childNodes[0]);
+    }
+
+    function removeLeftBox() {
+        var num = document.getElementById('num');
+        num.removeChild(num.firstChild);
+    }
+
+    function removeRightBox() {
+        var num = document.getElementById('num');
+        num.removeChild(num.lastChild);
+    }
+
+    function init() {
+        var leftIn = document.getElementById('left_in');
+        var rightIn = document.getElementById('right_in');
+        var leftOut = document.getElementById('left_out');
+        var rightOut = document.getElementById('right_out');
+        leftIn.addEventListener('click',addLeftBox,false);
+        rightIn.addEventListener('click',addRightBox,false);
+        leftOut.addEventListener('click',removeLeftBox,false);
+        rightOut.addEventListener('click',removeRightBox,false);
+    }
+
+    init();
+</script>
+</body>
+</html>
