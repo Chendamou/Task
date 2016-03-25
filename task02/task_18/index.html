@@ -78,11 +78,16 @@
     function removeLeftBox() {
         var num = document.getElementById('num');
         num.removeChild(num.firstChild);
+        var text = num.firstChild.innerHTML;
+        alert(text);
+
     }
 
     function removeRightBox() {
         var num = document.getElementById('num');
         num.removeChild(num.lastChild);
+        var alertValue = num.lastChild.innerHTML;
+        alert(alertValue);
     }
 
     function init() {
@@ -97,6 +102,7 @@
     }
 
     init();
+
 </script>
 </body>
 </html>
