@@ -1,0 +1,27 @@
+body {
+    margin:0;
+    padding: 0;
+}
+
+input {
+    margin: 10px;
+}
+
+#main {
+    width: 60%;
+    height: 500px;
+    border: 1px solid red;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+#main div {
+    width: 20px;
+    height: 400px;
+    background: green;
+    margin-right: 10px;
+}

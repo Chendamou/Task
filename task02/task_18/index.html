@@ -27,19 +27,13 @@
 </head>
 <body>
 <section>
-    <input type="text" id="text">
+    <input type="text" id="text" value="">
     <input type="button" value="左侧入" id="left_in">
     <input type="button" value="右侧入" id="right_in">
     <input type="button" value="左侧出" id="left_out">
     <input type="button" value="右侧出" id="right_out">
 </section>
 <section id="num">
-    <div>10</div>
-    <div>3</div>
-    <div>7</div>
-    <div>12</div>
-    <div>11</div>
-    <div>30</div>
 </section>
 <script>
 
@@ -50,29 +44,44 @@
         var rand = Math.floor(Math.random() * 0xFFFFFF).toString(16);
         return "#" + rand;
     }
+
+    function regNumber(val){
+        var reg=/^[0-9]+$/;
+        return reg.test(val);
+    }
     
     function getValue() {
         var text = document.getElementById('text');
         var val = text.value;
-        return val;
+        if (regNumber(val)) {
+            return val;
+        }
+        else {
+            alert(" input Number");
+            return false;
+        }
     }
 
     function addRightBox() {
-        var num = document.getElementById('num');
-        var div = document.createElement('div');
-        var text = document.createTextNode(getValue());
-        div.style.background = getRandomColor();
-        div.appendChild(text);
-        num.appendChild(div);
+        if (getValue()) {
+            var num = document.getElementById('num');
+            var div = document.createElement('div');
+            var text = document.createTextNode(getValue());
+            div.style.background = getRandomColor();
+            div.appendChild(text);
+            num.appendChild(div);
+        }
     }
 
     function addLeftBox() {
-        var num = document.getElementById('num');
-        var div = document.createElement('div');
-        var text = document.createTextNode(getValue());
-        div.style.background = getRandomColor();
-        div.appendChild(text);
-        num.insertBefore(div,num.childNodes[0]);
+        if (getValue()) {
+            var num = document.getElementById('num');
+            var div = document.createElement('div');
+            var text = document.createTextNode(getValue());
+            div.style.background = getRandomColor();
+            div.appendChild(text);
+            num.insertBefore(div, num.childNodes[0]);
+        }
     }
 
     function removeLeftBox() {
