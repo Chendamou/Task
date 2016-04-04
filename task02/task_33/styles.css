@@ -1,0 +1,45 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    margin: 10px auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.grid-cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+
+    position: relative;
+}
+
+.head {
+    height: 10px;
+    width: 100%;
+    background: blue;
+}
+
+.foot {
+    height: 40px;
+    width: 100%;
+    background: red;
+}
+
+/*.left {*/
+    /*width: 10px;*/
+    /*height: 100%;*/
+    /*background: blue;*/
+/*}*/
+
+/*.right {*/
+    /*width: 40px;*/
+    /*height: 100%;*/
+    /*background: red;*/
+/*}*/
